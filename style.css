@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: #49a6e9;
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+body {
+    font-family: var(--ff-secondary);
+    background: rgba(0, 255, 123, 0.2);
+    color: var(--clr-grey-1);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2.3rem;
+    color: black;
+    padding-bottom: 5.3rem;
+}
+
+.container {
+    max-width: 1700px;
+    background: darkkhaki;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    height: 1200px;
+}
+
+#book-form {
+    /* padding-left: 20rem;
+    padding-right: 20rem; */
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+#book-form label {
+    /* text-align: left; */
+    color: black;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30rem;
+    /* background: rebeccapurple; */
+}
+
+#book-form .u-full-width {
+    background: white;
+    font-size: 20px;
+    width: 40rem;
+    height: 2.2rem;
+    border-radius: 5px;
+    margin-left: 10rem;
+    margin-bottom: 0.9rem;
+}
+
+
+/* .contact-form {
+    text-align: center;
+} */
+
+div .submit-btn {
+    width: 40rem;
+    height: 30px;
+    border-radius: 5px;
+    background: yellow;
+    color: blue;
+    margin-left: 40rem;
+    margin-bottom: 5.9rem;
+}
+
+div {
+    text-align: center;
+}
+
+.alert {
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+}
+
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.alert-success {
+    color: #155724;
+    background: #d4edda;
+}
+
+.edit-btn {
+    color: var(--clr-green-light);
+}
+
+.edit-btn:hover {
+    color: var(--clr-green-dark);
+}
+
+.delete-btn {
+    color: var(--clr-red-light);
+}
+
+.delete-btn:hover {
+    color: var(--clr-red-dark);
+}
+
+.clear-btn {
+    text-transform: capitalize;
+    width: 10rem;
+    height: 1.5rem;
+    display: grid;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-red-light);
+    margin: 0 auto;
+    font-size: 0.85rem;
+    letter-spacing: var(--spacing);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 1.25rem;
+}
+
+
+/* 
+
+div .u-full-width {
+    background-color: green;
+    font-size: 20px;
+    width: 30rem;
+    height: 2.1rem;
+    border: 1px solid white;
+    margin-right: 23rem;
+} */
+
+
+/* Table */
+
+.table-width {
+    /* background: green; */
+    width: 50rem;
+    /* padding: 50px; */
+    margin: auto;
+}
+
+th {
+    color: white;
+}
+
+tr {
+    margin: 20px;
+    padding: 30px;
+    background: violet;
+}
+
+td {
+    padding: 5px;
+    max-width: 100px;
+}

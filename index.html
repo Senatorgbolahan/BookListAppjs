@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List System</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <h1>Add Book</h1>
+
+        <form id="book-form">
+            <p class="alert"></p>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author" class="u-full-width">
+            </div>
+
+            <div>
+                <label for="author">ISBN#</label>
+                <input type="text" id="isbn" class="u-full-width">
+            </div>
+            <div>
+                <button class="submit-btn" type="submit">Submit</button>
+            </div>
+
+        </form>
+
+        <table class="table-width">
+            <tr data-id="id">
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+            </tr>
+
+            <!-- <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+            </tr> -->
+            <button type="button" class="clear-btn">clear items</button>
+
+
+        </table>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
